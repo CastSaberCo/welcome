@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castillo del saber</title>
+
+    <!-- Enlace de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Enlace de Bootstrap 5 CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Castillo del Saber |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#info">Sobre nosotros <span class="visually-hidden">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ofrecemos">Ofrecemos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contactanos</a></li>
+                  
+                       
+                    </ul>
+                   
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+          <!-- <div class="perfil col-md-12">
+                <div class="foto-contenedor">
+                    <img src="img/prueba.jpg" class="foto" alt="">
+                </div>
+                <div class="frase">
+                    <p>El estudio es el primer paso hacia el éxito.</p>
+                </div>
+          
+        </div> -->
+    
+
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="carrusel">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner img-fluid">
+                        <div class="carousel-item active">
+                            <img src="img/prueba.jpg" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/prueba1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/prueba2.webp" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info" id="info">
+                    <h2>Sobre nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae a odit rem quam ad beatae enim repudiandae doloremque, sit modi iusto, optio magnam aspernatur aperiam voluptatum expedita esse commodi molestias.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4" id="ofrecemos">
+            <h1 class="text-center">¿Que ofrecemos?</h1>
+            <div class="row mt-5">
+                <div class="col-md-7">
+                    <div class="info">
+                        <h2>Acesorias con tareas!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae a odit rem quam ad beatae enim repudiandae doloremque, sit modi iusto, optio magnam aspernatur aperiam voluptatum expedita esse commodi molestias.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="carrusel">
+                        <img src="img/prueba.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4" id="contacto">
+          <h1>¡Contáctanos!</h1>
+          <div class="row mt-3">
+            <div class="col-md-6 text-center">
+                <a href="https://wa.me/57" target="_blank" class="d-inline-block">
+                    <i class="fab fa-whatsapp fa-3x text-success"></i>
+                </a>
+                <h5>WhatsApp</h5>
+                <p id="numero">+57 000000</p>
+                <button class="boton-copiar btn btn-outline-primary mt-2" onclick="copiarTexto('numero', this)">
+                    <i class="fas fa-copy"></i> Copiar
+                </button>
+            </div>
+            <div class="col-md-6 text-center">
+                <a href="mailto:castsaberco@gmail.com" class="d-inline-block">
+                    <i class="fas fa-envelope fa-3x text-primary"></i>
+                </a>
+                <h5>Correo Electrónico</h5>
+                <p id="correo">castsaberco@gmail.com</p>
+                <button class="boton-copiar btn btn-outline-primary mt-2" onclick="copiarTexto('correo', this)">
+                    <i class="fas fa-copy"></i> Copiar
+                </button>
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/copiar.js"></script>
+</body>
+</html>
