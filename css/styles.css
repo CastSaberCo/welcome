@@ -25,7 +25,7 @@ nav {
     background-color: transparent;
     padding-left: 2rem;
     color: #2C3E50; 
-    font-size: 1.5em;
+    font-size: 1.5em !important;
 
 }
 
@@ -90,4 +90,7 @@ p {
 .boton-copiar:hover {
     background-color: #001f3f !important;
     color: #FFFFFF !important; 
+}
+.info h1, .info h2{
+    margin-bottom: 0.3em;
 }
