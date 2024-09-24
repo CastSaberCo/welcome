@@ -7,7 +7,17 @@ body {
 }
 
 header {
+    background-color: #85C1E9 !;  
+
     height: 10%;
+}
+.titulo{
+    font-family: 'Playfair Display', serif; 
+    font-size: 2.4em ;
+    font-weight: 700; 
+    color: #A51C30 ;
+    text-align: center; 
+    margin: 1em 0;
 }
 h1{
   color: #001f3f;
@@ -20,9 +30,14 @@ nav {
     border-bottom-right-radius: 1em;
     padding-left: 2rem;
 }
+nav img{
+    height: 4%;
+    width: 5%;
+    margin-right: 1em;
+}
 
 .navbar {
-    background-color: transparent;
+  
     padding-left: 2rem;
     color: #2C3E50; 
     font-size: 1.5em !important;
@@ -30,7 +45,9 @@ nav {
 }
 
 p {
-    color: #34495E !important; 
+    font-size: 1.2em;
+
+    color: black !important; 
 }
 
 .perfil {
@@ -76,7 +93,7 @@ p {
 
 #contacto i {
     cursor: pointer;
-    color: #001f3f !important;  /* Iconos de contacto en navy */
+    color: #001f3f !important;  
 }
 
 .boton-copiar {
@@ -92,5 +109,50 @@ p {
     color: #FFFFFF !important; 
 }
 .info h1, .info h2{
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5em;
+}
+.info img{
+    margin-bottom: 2em;
+    margin-left: 32%;
+    width: 25%;
+}
+.info ul{
+    padding-top: 0.6em;
+    font-size: 1.3em;
+    color: black !important; 
+
+}
+.info ul li{
+    margin-bottom: 0.6em;
+
+}
+.estrella{
+    width: 7%;
+}
+.libro{
+    margin-left: 10%;
+}
+.social-what{
+    width: 8.9em;
+}
+.social-email{
+    width: 9em;
+}
+@media (max-width:750px) {
+    .navbar{
+        padding-left: 0;
+    }
+    .estrella{
+        width: 13%;
+    }
+    nav img{
+       margin-right: 0;
+        width: 17%;
+       
+    }
+    nav h2{
+        max-width: 7em;
+        margin-left: -12%;
+        text-overflow: ellipsis;
+    }
 }
